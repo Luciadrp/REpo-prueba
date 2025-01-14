@@ -1,7 +1,7 @@
 ###### GIT & GITHUB
 
 dt <- iris 
-
+install.packages('hrbrthemes')
 
 library(summarytools)
 dfSummary(dt)
