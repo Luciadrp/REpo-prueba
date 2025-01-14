@@ -10,7 +10,7 @@ library (ggplot2)
 library(viridis)
 library(hrbrthemes)
 
-ggplot(dt,aes(x= Petal.Length, fill = Species)) + 
+ggplot(dt,aes(x= Petal.Length, color ="orange", fill = Species)) + 
   geom_density(adjust=1.5, alpha=0.5) +
   theme_ipsum() +
   facet_wrap(~Species) +
@@ -19,5 +19,7 @@ ggplot(dt,aes(x= Petal.Length, fill = Species)) +
     panel.spacing = unit(0.1, "lines"),
     axis.ticks.x=element_blank()
   )
+
+
 
   
